@@ -50,8 +50,12 @@ public class App {
         listStud.add(s5);
         listStud.add(s6);
 
-        System.out.println("Средний возраст учеников составляет - " + AverageAge.getAverageAge(listStud));
-        System.out.println("Средний возраст учителей составляет - " + AverageAge.getAverageAge(listTeach));
+        AverageAge<Student> servStud = new AverageAge<>();
+AverageAge<Teacher> servTeach = new AverageAge<>();
+System.out.println("Средний возраст учеников составляет - " + servStud.getAverageAge(listStud));
+System.out.println("Средний возраст учителей составляет - " + servTeach.getAverageAge(listTeach));
+
+        
 
         // StudentGroup group4580 = new StudentGroup(listStud, 4580);
         // //System.out.println(group4580);
